@@ -6,7 +6,4 @@ for i in range(1, t+1):
     for j in range(1,n+1):
         if j not in ls:
             ans.append(j)
-    print(f"#{i}", end=" ")
-    for k in range(len(ans)):
-        print(ans[k], end=" ")
-    print()
+    print(f"#{i}", *ans)
